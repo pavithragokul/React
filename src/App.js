@@ -1,5 +1,8 @@
 import './App.css';
-import MouseContainer from './Components/UseEffectHookConcepts/MouseContainer';
+import DataFetching from './Components/UseEffectHookConcepts/DataFetching';
+//import IntervalClassCounter from './Components/UseEffectHookConcepts/IntervalClassCounter';
+//import IntervalHookCounter from './Components/UseEffectHookConcepts/IntervalHookCounter';
+//import MouseContainer from './Components/UseEffectHookConcepts/MouseContainer';
 // import ClassMousePosition from './Components/UseEffectHookConcepts/ClassMousePosition';
 //import HookMouse from './Components/UseEffectHookConcepts/HookMouse';
 // import CounterHookFuncComponent from './Components/UseEffectHookConcepts/CounterHookFuncComponent';
@@ -25,7 +28,10 @@ function App() {
       {/* <CounterHookFuncTwo /> */}
       {/* <ClassMousePosition /> */}
       {/* <HookMouse /> */}
-      <MouseContainer />
+      {/* <MouseContainer /> */}
+      {/* <IntervalClassCounter />
+      <IntervalHookCounter /> */}
+      <DataFetching />
     </div>
   );
 }
