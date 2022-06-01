@@ -1,6 +1,12 @@
-import React from 'react';
+import React, {useReducer} from 'react';
 import './App.css';
-import CounterThree from './Components/useReducerConcepts/CounterThree';
+import DataFetchingUseReducer from './Components/useReducerConcepts/DataFetchingUseReducer'
+//import DataFetchingUseState from './Components/useReducerConcepts/DataFetchingUseState';
+// //goal is mantain account state in app.js and modify the state from components  A, d anf F
+// import ComponentA from './Components/useReducerConcepts/GlobalStateManagement/ComponentA';
+// import ComponentB from './Components/useReducerConcepts/GlobalStateManagement/ComponentB';
+// import ComponentC from './Components/useReducerConcepts/GlobalStateManagement/ComponentC';
+//import CounterThree from './Components/useReducerConcepts/CounterThree';
 //import Counterone from './Components/useReducerConcepts/Counterone';
 //import CounterTwo from './Components/useReducerConcepts/CounterTwo';
 //import ComponentC from './Components/useContextConcepts/ComponentC';
@@ -23,8 +29,26 @@ import CounterThree from './Components/useReducerConcepts/CounterThree';
 //  export const userContext = React.createContext();
 //  export const workContext = React.createContext();
 
+// export const countContext = React.createContext();
+
+// const initialState = 0;
+// const reducer = (state, action)=>{
+//     switch(action){
+//         case 'increment':
+//             return state + 1
+//         case 'decrement':
+//             return state -1
+//         case 'reset':
+//             return initialState
+//         default:
+//             return state
+//     }
+// }
+
 function App() {
+  //const [count,dispatch] = useReducer(reducer, initialState)
   return (
+  //<countContext.Provider value={ {countState:count, countDispatch:dispatch}}>
     <div className="App">
       {/* <ClassCounter />
       <CounterHook />  */}
@@ -46,8 +70,15 @@ function App() {
             <ComponentC />
         </workContext.Provider>   
       </userContext.Provider> */}
-      <CounterThree />
+      {/* <CounterThree /> */}
+      {/* count-{count}
+      <ComponentA />
+      <ComponentB />
+      <ComponentC /> */}
+      {/* <DataFetchingUseState /> */}
+      <DataFetchingUseReducer />
     </div>
+ // </countContext.Provider>
   );
 }
 
