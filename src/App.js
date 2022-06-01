@@ -1,5 +1,10 @@
+import React from 'react';
 import './App.css';
-import DataFetching from './Components/UseEffectHookConcepts/DataFetching';
+import CounterThree from './Components/useReducerConcepts/CounterThree';
+//import Counterone from './Components/useReducerConcepts/Counterone';
+//import CounterTwo from './Components/useReducerConcepts/CounterTwo';
+//import ComponentC from './Components/useContextConcepts/ComponentC';
+//import DataFetching from './Components/UseEffectHookConcepts/DataFetching';
 //import IntervalClassCounter from './Components/UseEffectHookConcepts/IntervalClassCounter';
 //import IntervalHookCounter from './Components/UseEffectHookConcepts/IntervalHookCounter';
 //import MouseContainer from './Components/UseEffectHookConcepts/MouseContainer';
@@ -14,6 +19,10 @@ import DataFetching from './Components/UseEffectHookConcepts/DataFetching';
 // import CounterHook from './Components/useStateHookConcepts/CounterHook';
 // import ClassCounterOne from './Components/UseEffectHookConcepts/ClassCounterOne';
 // import ClassCounterTwo from './Components/UseEffectHookConcepts/ClassCounterTwo';
+
+//  export const userContext = React.createContext();
+//  export const workContext = React.createContext();
+
 function App() {
   return (
     <div className="App">
@@ -31,7 +40,13 @@ function App() {
       {/* <MouseContainer /> */}
       {/* <IntervalClassCounter />
       <IntervalHookCounter /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
+      {/* <userContext.Provider value={'Pavithra'}>
+        <workContext.Provider value={'Senior Analyst Engineer'}>
+            <ComponentC />
+        </workContext.Provider>   
+      </userContext.Provider> */}
+      <CounterThree />
     </div>
   );
 }
