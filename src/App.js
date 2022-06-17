@@ -1,6 +1,16 @@
 import React, {useReducer} from 'react';
 import './App.css';
-import DataFetchingUseReducer from './Components/useReducerConcepts/DataFetchingUseReducer'
+import UserForm from './Components/CustomHook/UseInputCustomHook/UserForm';
+// import DocTitleOne from './Components/CustomHook/DocTitleOne';
+// import DocTitleTwo from './Components/CustomHook/DocTitleTwo';
+// import CounterOne from './Components/CustomHook/usCounterHook/CounterOne';
+// import CounterTwo from './Components/CustomHook/usCounterHook/CounterTwo';
+//import Hooktimer from './Components/usRefConcepts/Hooktimer';
+//import ClassTimer from './Components/usRefConcepts/ClassTimer';
+//import FocusInput from './Components/usRefConcepts/FocusInput';
+//import Counter from './Components/useMemoHookConcepts/Counter';
+//import ParentComponent from './Components/useCallBAckConcepts/ParentComponent';
+//import DataFetchingUseReducer from './Components/useReducerConcepts/DataFetchingUseReducer'
 //import DataFetchingUseState from './Components/useReducerConcepts/DataFetchingUseState';
 // //goal is mantain account state in app.js and modify the state from components  A, d anf F
 // import ComponentA from './Components/useReducerConcepts/GlobalStateManagement/ComponentA';
@@ -76,7 +86,17 @@ function App() {
       <ComponentB />
       <ComponentC /> */}
       {/* <DataFetchingUseState /> */}
-      <DataFetchingUseReducer />
+      {/* <DataFetchingUseReducer /> */}
+      {/* <ParentComponent /> */}
+      {/* <Counter /> */}
+      {/* <FocusInput /> */}
+      {/* <ClassTimer /> */}
+      {/* <Hooktimer /> */}
+      {/* <DocTitleOne />
+      <DocTitleTwo /> */}
+      {/* <CounterOne />
+      <CounterTwo /> */}
+      <UserForm />
     </div>
  // </countContext.Provider>
   );
